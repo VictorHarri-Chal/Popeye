@@ -1,11 +1,12 @@
 # popeye
-A basic application (similar to a strawpoll) to learn how Docker works
+
+![POPEYE](popeye.png)
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 The goal of this project is to containerize and define the deployment of a simple web poll application
 
-There are five elements constituting the application:
+There are five elements constituting the application, connected in a container :
 
 - **Poll**, a flask Python web application that gathers votes and push them into a `Redis` queue.
 
@@ -15,7 +16,9 @@ There are five elements constituting the application:
 
 - **PostgreSQL database**, which (persistently) stores the votes stored by the Worker.
 
-- **Result**, a Node.js web application that fetches the votes from the database and displays the result
+- **Result**, a Node.js web application that fetches the votes from the database and displays the. . . well, result.
+
+![POPEYE_SCHEMA](popeye_schema.png)
 
 ### Built With
 * Docker-compose
@@ -23,11 +26,12 @@ There are five elements constituting the application:
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Clone the repositorie and buil images with Docker-compose
+Check that Docker is installed on your computer and let's start !
+Clone the repositorie and build images with Docker-compose
 ```sh
 docker-compose up --build
 ```
-see Poll on `localhost:5000/` and Result on `localhost:5001/`
+you can see the Poll on `localhost:5000/` and the Result on `localhost:5001/`
 
 Do not forget to down containers
 ```sh
