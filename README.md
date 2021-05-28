@@ -20,6 +20,11 @@ There are five elements constituting the application, connected in a container :
 
 ![POPEYE_SCHEMA](popeye_schema.png)
 
+<!-- REQUIREMENTS -->
+## Requirements
+* Docker
+* Docker Compose
+
 ### Built With
 * Docker-compose
 
