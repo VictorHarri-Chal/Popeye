@@ -25,9 +25,6 @@ There are five elements constituting the application, connected in a container :
 * Docker
 * Docker Compose
 
-### Built With
-* Docker-compose
-
 <!-- GETTING STARTED -->
 ## Getting Started
 
